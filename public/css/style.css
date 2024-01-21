@@ -1,6 +1,370 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
 
 body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+    padding: 50px;
+    color: black; /* Metin rengi varsayılan olarak siyah */
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+.footer i {
+    font-size: 36px;
+}
+        
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: black; /* Metin rengi varsayılan olarak siyah */
+}
+
+/* Bağlantıların altı çizgi olmadan ve mavi renkte olması */
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Ayarlar düğmesi ve menüsü */
+#settings-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#settings-menu {
+    display: none;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#font-size-label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#font-size-slider {
+    width: 100%;
+}
+
+#font-size-display {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+       
+/* Ayarlar menüsünün sağ üstte görünmesi için stil */
+#settings-menu {
+    position: absolute;
+    top: 100px; 
+    right: 20px;
+    z-index: 1; /* Diğer içeriğin üzerinde olmalı */
+}
+        
+/* Ayarlar menüsündeki font seçimi */
+#font-family-select {
+    width: 100%;
+    padding: 5px;
+}
+/* Arka plan resmi stilini ayarlayın */
+body {
+    background-image: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Metin gölgelendirme stilini ayarlayın */
+.text-shadow-enabled {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.search-results {
+    max-width: 400px;
+    margin: 20px auto; /* Arama sonuçlarını ortala */
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+}
+
+.result-item {
+    margin-bottom: 10px;
+}
+
+.result-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+/* Arama kutusu ve butonun stilini özelleştirin */
+.search-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#searchInput {
+  padding: 10px;
+  width: 400px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+}
+
+#searchButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Öneri sonuçlarının stilini özelleştirin */
+.suggestions {
+  text-align: center;
+  max-width: 400px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+body {
+        background-color: #fff; /* Beyaz arka plan */
+        color: #000; /* Siyah metin rengi */
+    }
+
+    footer {
+        background-color: #fff;
+        padding: 20px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        border-top: 1px solid #ddd; /* Üst çizgi */
+        border-bottom: 1px solid #ddd; /* Alt çizgi */
+    }
+
+    .left-section {
+        flex: 1;
+    }
+
+    .logo {
+        max-width: 100px; /* Logonun maksimum genişliği */
+    }
+
+    .social-media {
+        margin-top: 20px;
+    }
+
+    .social-media a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .menu {
+        flex: 2;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+
+    .menu li:first-child {
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .copyright {
+        flex-basis: 100%;
+        margin-top: 20px;
+        text-align: left; /* Telif hakkı mesajını sola taşıdık */
+        font-size: 14px; /* Telif hakkı mesajının font boyutunu ayarlayabilirsiniz */
+    }
+        /* Header stil */
+        header {
+            background-color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            top: 0; /* Başlangıçta normal yerinde başlasın */
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .logo {
+            max-width: 100px;
+            margin-left: 20px;
+        }
+
+        .kahrolsunisrail {
+            max-width: 80px;
+            margin-left: 20px;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-text {
+            font-weight: bold;
+            font-size: 24px;
+            text-align: left;
+            margin-left: 10px; /* Icon ile metin arasına boşluk eklendi */
+        }
+
+        .header-center {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .header-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .header-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Bağlantı iconları için stil */
+        .code-icon {
+            font-size: 24px;
+            color: #333; /* Metin ile aynı renk */
+            margin-right: 5px;
+        }
+
+        /* Sosyal medya ikonları stil */
+        .social-media_f {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-right: 20px;
+        }
+
+        .social-media_f a {
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+        }
+
+        /* Sayfa içeriğinin üstüne boşluk bırakmak için */
+        .content {
+            margin-top: 120px; /* Header'ın boyutunu dikkate alarak artırın */
+            padding: 20px;
+        }
+
+        /* Header'ın sayfa yukarı kaydırıldığında görünmesini ve kaybolmasını sağlayan stil */
+        .show-header {
+            top: 0;
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Sayfa başladığında header'ı kaydırmak için stil */
+        .hide-header {
+            top: -80px; /* Header'ı yukarı kaydırın */
+            opacity: 0;
+            pointer-events: none;
+        }
+          .hey-turkiye {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 180px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .hey-turkiye a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+        }
+
+        .hey-turkiye a:hover {
+            background-color: #ddd;
+        }
+
+        .dahafazla:hover .hey-turkiye {
+            display: block;
+        }
+        
+        .dahafazla { 
+            position: relative; 
+            display: inline-block; 
+        }
+        
+        .dahafazla i { 
+        font-size: 20px; 
+        cursor: pointer; 
+        }
+
+body {
   font-family: Montserrat, sans-serif;
   margin: 0;
   padding: 0;
